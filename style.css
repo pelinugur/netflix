@@ -1,0 +1,233 @@
+body{
+   
+    margin: 0;
+    padding: 0;
+    background-color: black
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap');
+
+.first{
+    position: relative;
+    background: url(./image/TR-tr-20211011-popsignuptwoweeks-perspective_alpha_website_large.jpg ) no-repeat 0 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    background-size:cover;
+    margin: 0 !important;
+}
+
+.first-shadow{
+
+    position: absolute;
+    background-size:cover;
+    inset: 0;
+    background-image:  linear-gradient(to top,rgba(0,0,0,11.9) 0,rgba(0,0,0,0.5) 60%,rgba(0,0,0,.9) 100%)
+
+}
+.logo img {
+    width: 28%;
+    padding: 15px;
+}
+.btn-primary{
+   
+    width: 50% !important;
+    height: 37px !important;
+    background-color: transparent !important;
+    border-color: #fff;
+    font-size: 13PX;
+}
+.btn-secondary{
+    background-color: #e50914 !important;
+    width: 120px !important;
+    height: 37px !important;
+}
+.story{
+    width: 100%;
+    height: 600px;
+}
+
+.inpt input{
+    border-color: transparent;
+
+    width: 350px;
+    height: 50px;
+    outline: none;
+}
+.inpt button{
+    height: 50px;
+    width: 130px;
+    background-color: #e50914 !important;
+    color: #fff;
+    border-color:transparent ;
+    outline: none;
+ 
+    
+}
+.about-text{
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.first,.second, .third, .fourth, .fifth{
+
+
+    border-bottom: 8px solid #222;
+
+}
+
+.tv_about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 390px;
+}
+.animation img {
+    width: 100%;
+}
+
+.strangerimg img{
+    width: 100%;
+}
+.child-img img{
+    width: 100%;
+}
+
+.animation img{
+    position: relative;
+  
+}
+.animation video{
+    width: 65%;
+    position: absolute;
+
+}
+.device_img img{
+    position: relative;
+    width: 83%;
+}
+.device_img video{
+    position: absolute;
+    margin-bottom:6rem;
+    width: 50%;
+}
+
+.fifth{
+    height: 500px;
+  
+
+}
+.ques-btn {
+    width: 68%;
+    height: 60px;
+    margin: 10px;
+    background-color: #303030;
+    color: #fff;
+    text-align: start;
+    padding-left:  30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+.form-inp{
+    border-color: transparent;
+    width:  300px;
+    height: 50px;
+    outline: none;
+
+}
+.form-btn {
+    height: 50px;
+    width: 130px;
+    background-color: #e50914 !important;
+    color: #fff;
+    border-color:transparent ;
+    outline: none;
+
+ 
+}
+.form_{
+    border-bottom: 8px solid #222;
+}
+.link ul li{
+    color: #757575;
+    list-style: none;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 14px;
+}
+
+
+.open-answer{
+    color: #fff;
+    padding: 28px;
+    background-color: #222;
+}
+
+@media screen and (max-width:540px) {
+
+    .logo img {
+        width: 100%;
+        padding: 15px;
+    }
+    .ques-btn{
+        padding: 5px;
+        margin: 5px;
+        width: 90%;
+        padding: 10px;
+       
+    }
+    .about-text h1{
+    
+        width: 50%;
+    }
+    .form-check{
+        flex-direction: column;
+
+    }
+    .accordion button {
+        width: 84% !important;
+        height: 55px !important;
+        font-size: 19px !important;
+    }   
+    .accordion p{
+        width: 84% !important;
+
+        font-size: 19px !important;
+    }   
+    .form-btn{
+        margin-top: 20px;
+    }
+   
+}
+
+.fin-btn button{
+    outline: none !important;
+}
+.accordion p{
+    font-size: 19px;
+    padding: 30px;
+    color: #fff;
+    width: 60%;
+    background-color: #303030;
+    font-family: 'Poppins', sans-serif;
+}
+.accordion button{
+    width: 60%;
+    height: 55px;
+    border: none;
+    color: #fff;
+    background-color: #303030;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    outline: none;
+    
+}
+.link{
+    margin-right: 50px;
+}

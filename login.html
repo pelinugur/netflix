@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./login.css">
+  <script src="bootstrap/js/jquery-3.4.1.min.js"></script>
+  <title>login</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="effect">
+      <div class="navbar">
+        <div class="logo d-flex justify-content-start">
+          <img src="./image/netflix-logo-png-2583.png" alt="" style="width: 25%; object-fit: cover; padding: 15px;">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="login-form p-5">
+          <h3 style="color: #fff;">Oturum Aç</h3>
+
+          <div class="input-section d-flex justify-content-center align-items-center flex-column">
+            <input type="email" placeholder="E‑posta veya telefon numara" id="mail">
+            <div id="uyari_mail" style="color: #e87c03; font-size: 14px; transition: 2s;"></div>
+            <input type="password" onclick="uyari()" name="" id="parola" placeholder="Parola">
+            <div class="Input_error  d-flex justify-content-start" id="uyari_parola"
+              style=" width: 100%; color: #e87c03; font-size: 14px; transition: 2s;">
+            </div>
+
+          </div>
+
+          <div class="button-section d-flex justify-content-center align-items-center">
+            <a href="./login.html"><button onclick="logincontrol()">Oturum Aç</button></a>
+          </div>
+
+          <div class="check-section p-2 d-flex justify-content-between align-items-center">
+            <a href="" class="remember"><input type="checkbox" name="" id=""
+                style="outline: none; background-color: #b3b3b3;"> Beni hatirla</a>
+            <a href="" class="remember">Yardım ister misiniz?</a>
+          </div>
+
+          <div class="social-btn d-flex justify-content-center align-items-center flex-column">
+            <a href="https://tr-tr.facebook.com/" class="facebook d-flex justify-content-start align-items-center w-100"
+              style="text-decoration: none; color: #737373; font-size: 15px;"><i class="fab fa-facebook-square"
+                style="font-size: 22px; margin: 5px; text-decoration: none;"></i>Facebook ile Oturum Aç</a>
+            <h6>Netflix'e katılmak ister misiniz? <a href="./index.html" style="color: #fff; font-size: 15px;">Şimdi kaydolun.</a>
+            </h6>
+            <p style="font-size: 14px; color: #8c8c8c;">Bu sayfa robot olmadığınızı kanıtlamak için Google reCAPTCHA
+              tarafından korunuyor. <br> <a href="">Daha
+                fazlasını öğrenin.</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer p-2 ">
+        
+          <div class="col-12">
+            <p style="color: #757575;" class="footer_help d-flex justify-content-center align-items-center w-100 ">Sorularınız mı var? 0850-390-7444 numaralı telefonu arayın</p>
+          </div>
+        </div>
+        <div class="col-12">
+        <div class="row">
+          <div class="col-3">
+            <div class="footer_list d-flex justify-content-center align-items-center w-100 ">
+              <ul>
+                <a href="" > <li class="footer_li" >SSS</li> </a>
+                <a href="" > <li class="footer_li">Çerez Tercihleri</li> </a>
+                <a href="" > <li class="footer_li">Yardım Merkezi</li> </a>
+                
+              </ul>
+            </div> 
+          </div>
+          <div class="col-3">
+            <div class="footer_list  d-flex justify-content-center align-items-center w-100 ">
+              <ul>
+                <a href="" > <li class="footer_li" >SSS</li> </a>
+                <a href="" > <li class="footer_li">Çerez Tercihleri</li> </a>
+                <a href="" > <li class="footer_li">Yardım Merkezi</li> </a>
+               
+              </ul>
+            </div> 
+          </div>
+          <div class="col-3">
+            <div class="footer_list  d-flex justify-content-center align-items-center w-100 ">
+              <ul>
+                <a href="" > <li class="footer_li" >SSS</li> </a>
+                <a href="" > <li class="footer_li">Çerez Tercihleri</li> </a>
+                <a href="" > <li class="footer_li">Yardım Merkezi</li> </a>
+                
+              </ul>
+            </div> 
+          </div>
+          <div class="col-3">
+            <div class="footer_list  d-flex justify-content-center align-items-center w-100 ">
+              <ul>
+                <a href="" > <li class="footer_li" >SSS</li> </a>
+                <a href="" > <li class="footer_li">Çerez Tercihleri</li> </a>
+                <a href="" > <li class="footer_li">Yardım Merkezi</li> </a>
+                
+              </ul>
+            </div> 
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+  </div>
+
+  <script>
+
+
+    let kullanici_parola = document.getElementById("parola").value;
+    let kullanici_mail = document.getElementById("mail").value;
+    function logincontrol() {
+
+
+
+      if (kullanici_mail == "" || kullanici_parola == "") {
+        document.getElementById("uyari_mail").innerHTML = "Lütfen geçerli bir telefon numarası veya e‑posta adresi girin.";
+        document.getElementById("uyari_parola").innerHTML = "Parolanız 4 ila 60 karakter olmalıdır.";
+
+      }
+      else {
+        if (kullanici_mail == "pelin@gmail.com" && kullanici_parola == 123) {
+          alert("iyi seyirler");
+        }
+        else {
+          alert("yanlis mail veya parola");
+        }
+      }
+
+    }
+
+
+
+
+
+
+  </script>
+
+  <script src="./script.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+
+</body>
+
+</html>
